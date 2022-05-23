@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(82, 90, 56, 0.467);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+}
+
+.course{
+    background-color: #fff;
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+}
+
+.present{
+    height: 30vh;
+    max-width: 20vw;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.absent{
+    height: 30vh;
+    background-color: #fff;
+    max-width: 20vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.course > *{
+    margin: 10px 10px;
+}
+
+.course-name{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.percentage{
+    font-weight: 400;
+    font-size: 1.5rem;
+
+}
+
+.attended-hours{
+    font-size: 1.2rem;
+}
+
+.total-hours{
+font-size: 1.2rem;
+}
+
+.hours{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.btn{
+    width: 60%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 200;
+    background-color: rgba(8, 0, 255, 0.553);
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.reset{
+    height: 10vh;
+    width: 10vw;
+    font-size: 1rem;
+    font-weight: 200;
+    background-color: rgba(8, 0, 255, 0.553);
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    right: 6%;
+}
+
+
+.course-popup{
+    background-color: #ffffff;
+    height: 50vh;
+    width: 50vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 999;
+    border-radius: 50px;
+    display: none;
+}
+.course-popup form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.input{
+    margin-bottom: 10px;
+    height: 40px;
+    width: 100%;
+    border: 2px solid rgba(8, 0, 255, 0.553);
+    border-radius: 10px;
+    padding: 10px;
+}
+.input::placeholder{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.course-popup button{
+    height: 40px;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 200;
+    background-color: rgba(8, 0, 255, 0.553);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.course-popup h2{
+    margin: 10px 0 5px 0;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.overlay span{
+    color: #ffffff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}

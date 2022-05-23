@@ -1,0 +1,12 @@
+This project is about to make the attendance percentage prediction easier.
+We can make a new course with zero attendance or a given attendance and we can increment or decrement the attendance or just predict the percentage by attending classes or missing classes.
+This project will use vanilla html,css and javascript.
+
+Tasks:
+   1.create the markup
+   2.style the markup using css
+   3.create the logic using javascript
+       3a.creating courses
+       3b.adding attendance
+       3c.calculating percentage
+       3d.increment or decrement attendance and predict percentage

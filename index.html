@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Attendance Averager</title>
+  </head>
+  <body>
+    <div class="course-adder">
+      <button class="course-adder-btn">Add Course</button>
+    </div>
+    <div class="courses"></div>
+    <div class="overlay">
+        <span>X</span>
+    </div>
+    <div class="course-popup">
+            <h2>Add a course</h2>
+        <form method="POST">
+          <label for="name">Name of Subject</label>
+      <input
+        class="input"
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Course name"
+        required
+      />
+      <label for="total-hours">Total Class Hours</label>
+      <input
+        class="input"
+        type="number"
+        name="total-hours"
+        id="total-hours"
+        placeholder="Total class hours"
+        required
+      />
+      <label for="attended-hours">Total Attended Hours</label>
+      <input
+        class="input"
+        type="number"
+        name="attended-hours"
+        id="attended-hours"
+        placeholder="Attended hours"
+        required
+      />
+      <button type="submit">Submit</button>
+        </form>
+    </div>
+  </body>
+  <script type="module" src="./index.js"></script>
+</html>
