@@ -30,7 +30,7 @@ body{
 
 .present{
     height: 30vh;
-    max-width: 20vw;
+    width: 20vw;
     background-color: #fff;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
@@ -41,8 +41,8 @@ body{
 }
 .absent{
     height: 30vh;
+    width: 20vw;
     background-color: #fff;
-    max-width: 20vw;
     border-radius: 20px;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -65,18 +65,14 @@ body{
 
 }
 
-.attended-hours{
-    font-size: 1.2rem;
-}
-
-.total-hours{
-font-size: 1.2rem;
-}
-
 .hours{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.hours > p{
+    font-size: 1.2rem;
 }
 .btn{
     width: 60%;
@@ -181,4 +177,82 @@ font-size: 1.2rem;
    -webkit-user-select: none;
    -ms-user-select: none;
    user-select: none;
+}
+
+/* responsive */
+@media screen and (max-width:600px) {
+    .reset{
+        height: 7vh;
+        width: 25vw;
+        border-radius: 5px;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 5px;
+        grid-template-areas: 
+        "absent present"
+        "course course";
+        width: 80vw;
+        height: 60vh;
+        align-items: end;
+    }
+    .absent,.present{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 50%;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .absent{
+        grid-area: absent;
+    }
+
+    .present{
+        grid-area: present;
+    }
+
+    .course{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        grid-area: course;
+    }
+
+    .btn{
+        width: 100%;
+        height: 100%;
+        font-size: 0.7rem;
+        border-radius: 0;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .course-popup {
+        height: auto;
+        width: 80vw;
+        border-radius: 0px;
+      }
+    
+      .course-popup h2 {
+        margin: 10px 0;
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+
 }

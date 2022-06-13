@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="course.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="course.css" />
     <title>Course Details</title>
-</head>
-<body>
+  </head>
+  <body>
     <button class="reset">Edit Data</button>
     <div class="main">
-        <div class="absent">
+      <div class="absent">
         <button class="absent-btn btn">Was absent in a class</button>
-    </div>
-    <div class="course">
+      </div>
+      <div class="course">
         <h2 class="course-name"></h2>
         <h4 class="percentage"></h4>
         <div class="hours">
-            <p class="attended-hours"></p>
-            <p class="total-hours"></p>
+          <p class="attended-hours"></p>
+          <p class="total-hours"></p>
         </div>
-    </div>
-    <div class="present">
+      </div>
+      <div class="present">
         <button class="present-btn btn">Was present in a class</button>
-    </div>
+      </div>
     </div>
     <div class="overlay">
-        <span>X</span>
+      <span>X</span>
     </div>
     <div class="course-popup">
-        <h2>Edit a course</h2>
-    <form method="POST">
+      <h2>Edit a course</h2>
+      <form method="POST">
         <label for="name">Name of Subject</label>
-      <input
-        class="input"
-        type="text"
-        name="name"
-        id="name"
-        placeholder="Course name"
-        required
-      />
-      <label for="total-hours">Total Class Hours</label>
-      <input
-        class="input"
-        type="number"
-        name="total-hours"
-        id="total-hours"
-        placeholder="Total class hours"
-        required
-      />
-      <label for="attended-hours">Total Attended Hours</label>
-      <input
-        class="input"
-        type="number"
-        name="attended-hours"
-        id="attended-hours"
-        placeholder="Attended hours"
-        required
-      />
-      <button type="submit">Submit</button>
-    </form>
-</div>
-</body>
-<script src="./course.js"></script>
+        <input
+          class="input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Course name"
+          required
+        />
+        <label for="total-hours">Total Class Hours</label>
+        <input
+          class="input"
+          type="number"
+          name="total-hours"
+          id="total-hours"
+          placeholder="Total class hours"
+          required
+        />
+        <label for="attended-hours">Total Attended Hours</label>
+        <input
+          class="input"
+          type="number"
+          name="attended-hours"
+          id="attended-hours"
+          placeholder="Attended hours"
+          required
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+  <script src="./course.js"></script>
 </html>
